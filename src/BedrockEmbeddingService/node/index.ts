@@ -11,7 +11,7 @@ export function createNodeDefinition(): EnhancedNodeDefinition {
   const { NodeInputType } = getPlatformDependencies();
 
   return {
-    packageVersion: "1.0.39",
+    packageVersion: "1.0.40",
     type: "BedrockEmbeddingService",
     name: "Embedding Service",
     description: "AWS Bedrock embedding service provider - responds to SERVICE_CALL signals",

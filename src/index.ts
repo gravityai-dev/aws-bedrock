@@ -31,3 +31,7 @@ const plugin = createPlugin({
 });
 
 export default plugin;
+
+// Export shared utilities
+export { generateEmbedding } from "./shared/embedding";
+export type { EmbeddingConfig, AWSCredentials } from "./shared/embedding";
