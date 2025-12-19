@@ -10,7 +10,7 @@ export function createNodeDefinition(): EnhancedNodeDefinition {
   const { NodeInputType } = getPlatformDependencies();
 
   return {
-    packageVersion: "1.0.40",
+    packageVersion: "1.1.0",
     type: "BedrockClaude",
     isService: false,
     name: "Bedrock Claude",
@@ -52,13 +52,9 @@ export function createNodeDefinition(): EnhancedNodeDefinition {
           type: "string",
           title: "Model",
           description: "Select the Claude model to use",
-          enum: [
-            "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
-            "us.anthropic.claude-sonnet-4-20250514-v1:0",
-            "us.anthropic.claude-3-5-haiku-20241022-v1:0",
-          ],
-          enumNames: ["Claude Sonnet 4.5", "Claude Sonnet 4", "Claude 3.5 Haiku"],
-          default: "us.anthropic.claude-3-5-sonnet-20241022-v2:0",
+          enum: ["us.anthropic.claude-sonnet-4-5-20250929-v1:0", "us.anthropic.claude-haiku-4-5-20251001-v1:0"],
+          enumNames: ["Claude Sonnet 4.5", "Claude 4.5 Haiku"],
+          default: "us.anthropic.claude-haiku-4-5-20251001-v1:0",
         },
         maxTokens: {
           type: "number",

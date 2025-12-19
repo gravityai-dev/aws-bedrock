@@ -10,7 +10,7 @@ export function createNodeDefinition(): EnhancedNodeDefinition {
   const { NodeInputType } = getPlatformDependencies();
   
   return {
-    packageVersion: "1.0.40",
+    packageVersion: "1.1.0",
     type: "BedrockEmbedding",
     name: "Bedrock Embedding",
     description: "Generate vector embeddings from text using AWS Bedrock Titan models",
